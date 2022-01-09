@@ -35,6 +35,9 @@
       dell-xps-15-9560-nvidia = import ./dell/xps/15-9560/nvidia;
       dell-xps-15-9500 = import ./dell/xps/15-9500;
       dell-xps-15-9500-nvidia = import ./dell/xps/15-9500/nvidia;
+      dell-xps-8910 = import ./dell/xps/8910;
+      dell-xps-8910-intel = import ./dell/xps/8910/intel;
+      dell-xps-8910-nvidia = import ./dell/xps/8910/nvidia;
       friendlyarm-nanopc-t4 = import ./friendlyarm/nanopc-t4;
       google-pixelbook = import ./google/pixelbook;
       gpd-micropc = import ./gpd/micropc;
