@@ -12,7 +12,7 @@
   # or
   # xps-8910/nvidia
 
-  hardware.nvidia.offload.prime.enable = false; # Seems to be incompatible with some options;
+  hardware.nvidia.prime.offload.enable = false; # Seems to be incompatible with some options;
   services.xserver.videoDrivers = lib.mkDefault [ "intel" "nvidia" ];
   boot.blacklistedKernelModules = lib.mkDefault [ "nouveau" "bbswitch" ];
   boot.extraModulePackages = lib.mkDefault [ pkgs.linuxPackages.nvidia_x11 ];
