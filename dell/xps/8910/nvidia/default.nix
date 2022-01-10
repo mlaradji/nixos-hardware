@@ -9,6 +9,6 @@
 
   ##### disable intel, run nvidia only and as default
   services.xserver.videoDrivers = lib.mkDefault [ "nvidia" ];
-  hardware.nvidia.offload.enable = false;
+  hardware.nvidia.prime.offload.enable = false;
   hardware.nvidia.modesetting.enable = lib.mkDefault true;
 }
