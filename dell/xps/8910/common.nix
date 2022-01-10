@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ lib, config, ... }:
 {
   boot.kernelParams = [
     "intel_iommu=on"
