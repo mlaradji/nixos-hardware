@@ -1,7 +1,9 @@
 {
   description = "nixos-hardware";
 
-  outputs = { self }: {
+  inputs.nixpkgs.url = github:nixos/nixpkgs/nixos-unstable-small;
+
+  outputs = { self, ... }: {
     nixosModules = {
       dell-aspire-4810t = import ./acer/aspire/4810t;
       asus-battery = import ./asus/battery.nix;

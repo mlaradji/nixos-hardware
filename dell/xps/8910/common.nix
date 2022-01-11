@@ -4,7 +4,7 @@
     "intel_iommu=on"
   ];
 
-  hardware.cpu.intel.sgx.provision.enable = lib.mkDefault true;
+  # hardware.cpu.intel.sgx.provision.enable = lib.mkDefault true; # FIXME: this is not available on 21.11
   hardware.nvidia.powerManagement.enable = lib.mkDefault true;
   hardware.nvidia.prime.intelBusId = lib.mkDefault "PCI:0:2:0";
   hardware.nvidia.prime.nvidiaBusId = lib.mkDefault "PCI:1:0:0";
