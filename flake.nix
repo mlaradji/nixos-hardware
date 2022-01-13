@@ -1,7 +1,7 @@
 {
   description = "nixos-hardware";
 
-  inputs.nixpkgs.url = github:nixos/nixpkgs/nixos-unstable-small;
+  inputs.nixpkgs.url = github:nixos/nixpkgs/nixos-unstable;
 
   outputs = { self, ... }: {
     nixosModules = {
@@ -40,6 +40,7 @@
       dell-xps-8910 = import ./dell/xps/8910;
       dell-xps-8910-intel = import ./dell/xps/8910/intel;
       dell-xps-8910-nvidia = import ./dell/xps/8910/nvidia;
+      dell-xps-8910-tune = import ./dell/xps/8910/tune.nix;
       friendlyarm-nanopc-t4 = import ./friendlyarm/nanopc-t4;
       google-pixelbook = import ./google/pixelbook;
       gpd-micropc = import ./gpd/micropc;
